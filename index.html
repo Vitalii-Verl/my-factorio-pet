@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo planner</title>
+  <link rel="stylesheet" href="css/factorio.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="f-dark-3-neutral">
+  <header>
+    <div class="container">
+      <!-- <a href="#">Мої схеми</a> -->
+    </div>
+  </header>
+  <div class="container f-dark-5-bot">
+
+    <div class="board">
+
+    </div>
+
+    <div class="main-tasks tasks f-dark-3-bot">
+      <h3>Головна доска</h3>
+      <div class="main-tasks__content" id="main-tasks"></div>
+      <div class="main-tasks__button">
+        <button id="openModalBtn">Додати</button>
+      </div>
+    </div>
+
+    <div class="verl-tasks tasks f-dark-3-bot">
+      <h3>Verl</h3>
+      <div class="verl-tasks__content" id="verl-tasks"></div>
+    </div>
+
+    <div class="blondbrain-tasks tasks f-dark-3-bot">
+      <h3>Blodnbrain</h3>
+      <div class="blondbrain-tasks__content" id="blondbrain-tasks"></div>
+    </div>
+  </div>
+
+  <!-- Модальное окно -->
+  <div id="myModal" class="modal">
+    <div class="modal-content f-light-3-top">
+      <button class="close-modal-btn" id="closeModalBtn">X</button>
+      <p><input id="form_task_title" class="f-dark-3-bot" type="text" placeholder="Назва задачі"></p>
+      <p><textarea id="form_task_description" class="f-dark-3-bot" placeholder="Опис задачі"></textarea></p>
+      <p>
+        <select class="f-dark-3-bot" name="" id="form_task_owner" style="color: white;">
+          <option value="Main">До головної</option>
+          <option value="Verl">Verl</option>
+          <option value="Blondbrain">Blondbrain</option>
+        </select>
+      </p>
+      <button class="add-modal-btn" id="addTaskBtn">Додати</button>
+      
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
