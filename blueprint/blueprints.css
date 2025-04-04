@@ -1,0 +1,43 @@
+body{
+  color: #f1f1f1;
+}
+h1, h2, h3{
+  color: #fbe6c7;
+}
+button{
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 7px;
+}
+textarea{
+  resize: none;
+}
+.pointer{
+  cursor: pointer;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1024px;
+  min-width: 720px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.blueprint{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
+.blueprint__img{
+  border: 1px solid black;
+}
+.blueprint__img:hover{
+  cursor: pointer;
+  border: 1px solid white;
+}
+.blueprint__img img{
+  max-height: 200px;
+  max-width: 200px;
+}
+.blueprint__description{}
